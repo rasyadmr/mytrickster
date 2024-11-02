@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./town.css">
+    <title>MyTrickster | Town</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="./../Assets/Image/MyTrickster.png" alt="logo">
+        </div>
+        <div class="nav-pages">
+            <div class="nav-toggler">
+                <button id="btn-toggle" onclick="navToggle()">
+                    <span>&#9776;</span>
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-items">
+                    <a href="./../Home/home.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Game/game.html">Game</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#">Town</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Signup/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Support/support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="game-town">
+            <h3 class="town-title">Game Town</h3>
+            <div class="town-items">
+                <div class="town-item">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-1.jpg" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Los Santos</h4>
+                        <p>A beautiful city that Los Santos have.</p>
+                    </div>
+                </div>
+                <div class="town-item-reversed">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-2.png" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Sandy Shores</h4>
+                        <p>A city like the desert.</p>
+                    </div>
+                </div>
+                <div class="town-item">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-3.jpg" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Blaine County</h4>
+                        <p>A city with most of it full of forests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./town.js"></script>
+</body>
+</html>

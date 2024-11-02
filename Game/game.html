@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game.css">
+    <title>MyTrickster | Game</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="./../Assets/Image/MyTrickster.png" alt="logo">
+        </div>
+        <div class="nav-pages">
+            <div class="nav-toggler">
+                <button id="btn-toggle" onclick="navToggle()">
+                    <span>&#9776;</span>
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-items">
+                    <a href="./../Home/home.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#">Game</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Town/town.html">Town</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Signup/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Support/support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Gameplay and Heists</h1>
+        </header>
+
+        <div class="gameplay" id="gameplay">
+            <div class="gameplay-title">
+                <h2>Gameplay</h2>
+            </div>
+            <div class="gameplay-section">
+                <div class="gameplay-arrow">
+                    <a class="gameplay-button gameplay-prev" onclick="plusGameplay(-1)"><span>&#10094;</span></a>
+                </div>
+                <div class="gameplay-item fade">
+                    <img src="./../Assets/Image/gameplay-1.jpg" alt="gameplay 1">
+                </div>
+                <div class="gameplay-item fade">
+                    <img src="./../Assets/Image/gameplay-2.jpeg" alt="gameplay 2">
+                </div>
+                <div class="gameplay-item fade">
+                    <img src="./../Assets/Image/gameplay-3.webp" alt="gameplay 3">
+                </div>
+                <div class="gameplay-arrow">
+                    <a class="gameplay-button gameplay-next" onclick="plusGameplay(1)"><span>&#10095;</span></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentGameplay(1)"></span>
+            <span class="dot" onclick="currentGameplay(2)"></span>
+            <span class="dot" onclick="currentGameplay(3)"></span>
+        </div>
+
+        <div class="heist" id="heist">
+            <div class="heist-title">
+                <h2>Heist</h2>
+            </div>
+            <div class="heist-section">
+                <div class="heist-arrow">
+                    <a class="heist-button heist-prev" onclick="plusHeist(-1)"><span>&#10094;</span></a>
+                </div>
+                <div class="heist-item fade">
+                    <img src="./../Assets/Image/heist-1.webp" alt="heist 1">
+                </div>
+                <div class="heist-item fade">
+                    <img src="./../Assets/Image/heist-2.webp" alt="heist 2">
+                </div>
+                <div class="heist-item fade">
+                    <img src="./../Assets/Image/heist-3.webp" alt="heist 3">
+                </div>
+                <div class="heist-item fade">
+                    <img src="./../Assets/Image/heist-4.jpeg" alt="heist 4">
+                </div>
+                <div class="heist-arrow">
+                    <a class="heist-button heist-next" onclick="plusHeist(1)"><span>&#10095;</span></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentHeist(1)"></span>
+            <span class="dot" onclick="currentHeist(2)"></span>
+            <span class="dot" onclick="currentHeist(3)"></span>
+            <span class="dot" onclick="currentHeist(4)"></span>
+        </div>
+    </div>
+
+    
+    <script src="./game.js"></script>
+</body>
+</html>

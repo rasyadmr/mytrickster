@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>MyTrickster | Sign Up</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="./../Assets/Image/MyTrickster.png" alt="logo">
+        </div>
+        <div class="nav-pages">
+            <div class="nav-toggler">
+                <button id="btn-toggle" onclick="navToggle()">
+                    <span>&#9776;</span>
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-items">
+                    <a href="./../Home/home.html">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Game/game.html">Game</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Town/town.html">Town</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#">Sign Up</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Support/support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="register">
+            <div class="register-title">
+                <h1>Register</h1>
+            </div>
+            <div class="register-area">
+                <form name="register" id="register">
+                    <div class="input">
+                        <label for="fullname">Fullname</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Full Name">
+                    </div>
+                    <div class="input">
+                        <label for="username">Username</label>
+                        <input id="username" name="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" placeholder="Age">
+                    </div>
+                    <div class="input">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="null" selected>Choose Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Password">
+                    </div>
+                    <div class="input">
+                        <label for="confirm">Confirm Password</label>
+                        <input id="confirm" name="confirm" type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="terms">
+                        <label class="checkbox" for="terms">
+                            Agree Terms & Conditions
+                        </label>
+                    </div>
+                    <p class="error" id="error"></p>
+                    <div class="input">
+                        <input class="submit" type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./signup.js"></script>
+</body>
+</html>

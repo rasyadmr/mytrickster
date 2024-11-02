@@ -1,0 +1,360 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-logo {
+    padding: 0px 20px;
+    display: flex;
+    height: 45px;
+}
+
+.nav-pages {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-items {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+    width: 70px;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-items:last-child {
+    margin-right: 0;
+}
+
+.nav-pages a {
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-pages a:hover {
+    color: #66c2ff;
+}
+
+.nav-toggler {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-toggler button {
+    border: none;
+    background-color: white;
+}
+
+.nav-toggler span {
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+}
+
+.gameplay {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameplay-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gameplay-title h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.gameplay-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+}
+
+.gameplay-item {
+    display: none;
+    align-items: center;
+}
+
+.gameplay-item img {
+    width: 100%;
+}
+
+.gameplay-button {
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.gameplay-prev {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.gameplay-next {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.gameplay-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.gameplay-arrow a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gameplay-arrow a span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay-button:hover {
+    background-color: rgba(102,194,255,0.8);
+}
+
+.heist {
+    display: flex;
+    flex-direction: column;
+}
+
+.heist-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.heist-title h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.heist-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+}
+
+.heist-item {
+    display: none;
+    align-items: center;
+}
+
+.heist-item img {
+    width: 100%;
+}
+
+.heist-button {
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.heist-prev {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.heist-next {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.heist-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.heist-arrow a {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.heist-arrow a span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heist-button:hover {
+    background-color: rgba(102,194,255,0.8);
+}
+
+.dots {
+    padding: 5px 0px 20px 0px;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-list {
+        display: flex;
+        top: 50px;
+        right: 0px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        height: 250px;
+        transform: translateY(-150%);
+        transition: all 0.5s;
+        background-color: white;
+        box-shadow: 0px 10px 8px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-list.show {
+        transform: translateY(0%);
+    }
+
+    .nav-toggler {
+        display: flex;
+    }
+
+    .nav-items:last-child {
+        margin: 0px 10px;
+    }
+
+    .gameplay-arrow {
+        display: none;
+    }
+
+    .heist-arrow {
+        display: none;
+    }
+}

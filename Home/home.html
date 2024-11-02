@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>MyTrickster | Home</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="./../Assets/Image/MyTrickster.png" alt="logo">
+        </div>
+        <div class="nav-pages">
+            <div class="nav-toggler">
+                <button id="btn-toggle" onclick="navToggle()">
+                    <span>&#9776;</span>
+                </button>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-items">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Game/game.html">Game</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Town/town.html">Town</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Signup/signup.html">Sign Up</a>
+                </li>
+                <li class="nav-items">
+                    <a href="./../Support/support.html">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <video src="./../Assets/Video/home-header.mp4" class="video" autoplay loop muted></video>
+        <div class="video-desc">
+            <h2 class="video-text">MyTrickster</h2>
+            <div class="anchor-box">
+                <a href="./../Signup/signup.html" class="video-anchor">
+                    <div class="video-btn">
+                        REGISTER NOW
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+        
+    <div class="container">
+        <div class="game-desc">
+            <div class="desc-content reveal">
+                <div class="desc-title">
+                    <h3>Game Description</h3>
+                </div>
+                <div class="desc-text">
+                    <p>MyTrickster is an open-world MMORPG game. This game has a massive world to explore with friends. You can do some missions, gathering resources, crafting items, and many more. The game is played from either a third-person or first-person perspective, and its world is navigated on foot and by vehicle. Players control their own character both during and outside missions. The story is centred on the heist sequences, and many missions involve shooting and driving gameplay. A "wanted" system governs the aggression of law enforcement response to players who commit crimes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-map reveal">
+            <h3 class="map-title">Game Map</h3>
+            <div class="map-item">
+                <div class="map-pict">
+                    <img src="./../Assets/Image/map.webp" alt="Game map" class="map-image">
+                </div>
+                <div class="map-text">
+                    <p class="map-desc">The game's map is based on Southern California in the United States and is known in the game as the state of San Andreas. The actual playable part of the map, seen below, is the southern part of San Andreas. The city of Los Santos comprises the southern end of the map and is based on the real-life city of Los Angeles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-town">
+            <h3 class="town-title reveal">Game Town</h3>
+            <div class="town-items">
+                <div class="town-item reveal">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-1.jpg" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Los Santos</h4>
+                        <p>A beautiful city that Los Santos have.</p>
+                    </div>
+                </div>
+                <div class="town-item-reversed reveal">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-2.png" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Sandy Shores</h4>
+                        <p>A city like the desert.</p>
+                    </div>
+                </div>
+                <div class="town-item reveal">
+                    <div class="town-pict">
+                        <img src="./../Assets/Image/town-3.jpg" alt="" class="town-image">
+                    </div>
+                    <div class="town-desc">
+                        <h4>Blaine County</h4>
+                        <p>A city with most of it full of forests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./../Assets/Image/home-footer.webp" class="footer-image" alt="Footer image"></img>
+        <div class="footer-desc">
+            <h2 class="footer-text">Be one of us!</h2>
+            <a href="./../Signup/signup.html" class="footer-anchor">
+                <div class="footer-btn">
+                    REGISTER NOW
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./home.js"></script>
+</body>
+</html>
